@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Potential of Small Hydropower</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <style>
+    @font-face {
+      font-family: 'WorkSans';
+      src: url('./assets/WorkSans-Bold.ttf') format('truetype');
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: 'TTTravelsBold';
+      src: url('./assets/TT%20Travels%20Trial%20Bold.otf') format('opentype');
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading/Splash Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <!-- Floating sparkles in loading screen -->
+    <div class="loading-sparkles-container">
+      <div class="loading-sparkle loading-sparkle-1"></div>
+      <div class="loading-sparkle loading-sparkle-2"></div>
+      <div class="loading-sparkle loading-sparkle-3"></div>
+      <div class="loading-sparkle loading-sparkle-4"></div>
+      <div class="loading-sparkle loading-sparkle-5"></div>
+      <div class="loading-sparkle loading-sparkle-6"></div>
+    </div>
+
+    <div class="loading-content">
+      <h1 class="loading-title">The Potential of Small Hydropower</h1>
+      <div class="loading-subtitle">Loading...</div>
+      <div class="loading-progress-bar">
+        <div class="loading-progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Underwater video background -->
+  <video autoplay muted loop class="video-background">
+    <source src="./assets/Underwater loop background.mp4" type="video/mp4">
+  </video>
+  
+  <!-- Floating fish -->
+  <div class="fish-container">
+    <img src="./assets/fish_1.svg" class="fish fish-1" alt="Fish 1">
+    <img src="./assets/fish_2.svg" class="fish fish-2" alt="Fish 2">
+    <img src="./assets/fish_3.svg" class="fish fish-3" alt="Fish 3">
+    <img src="./assets/fish_4.svg" class="fish fish-4" alt="Fish 4">
+    <img src="./assets/fish_1.svg" class="fish fish-5" alt="Fish 5">
+    <img src="./assets/fish_2.svg" class="fish fish-6" alt="Fish 6">
+    <img src="./assets/fish_3.svg" class="fish fish-7" alt="Fish 7">
+    <img src="./assets/fish_4.svg" class="fish fish-8" alt="Fish 8">
+  </div>
+  
+  <!-- Floating sparkles -->
+  <div class="sparkles-container">
+    <div class="sparkle sparkle-1"></div>
+    <div class="sparkle sparkle-2"></div>
+    <div class="sparkle sparkle-3"></div>
+    <div class="sparkle sparkle-4"></div>
+    <div class="sparkle sparkle-5"></div>
+    <div class="sparkle sparkle-6"></div>
+  </div>
+  
+  <div class="app-shell">
+    <main class="viewport">
+      <h1 class="title">The Potential of Small Hydropower</h1>
+      <div class="stage" id="stage"></div>
+      <div class="generator-core" id="generatorCore"></div>
+      <div class="spine"></div>
+    </main>
+  </div>
+
+  <!-- Modal for enlarged page display -->
+  <div class="modal" id="pageModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <div class="modal-close"></div>
+      <div class="modal-image-container">
+        <img id="modalImage" src="" alt="Enlarged page" />
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
